@@ -1,0 +1,119 @@
+.banner{
+    height: 450px;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    &:after{
+        content: "";
+        width:100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    h1{
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        width: 50%;
+        font-weight: 10000;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    p{
+        margin-left: 1rem;
+        color: white;
+        width: 50%;
+        word-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
+    }
+
+    
+    >div{
+        display: flex;
+       
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem;
+            width: 130px;
+            outline: none;
+            border: none;
+           
+            z-index: 10;
+            margin: 1rem;
+            cursor: pointer;
+            transition: all 0.5s;
+             
+            &:hover{
+                opacity: 0.6;
+            }
+
+            &:nth-child(odd){
+                background-color: white;
+                color: black;
+            }
+            &:nth-child(even){
+                background-color: rgb(96, 92, 92);
+                color: white;
+            }
+
+            svg{
+                font-size: 1.2rem;
+                margin: 0.2rem;
+                
+            }
+    
+        }
+    }
+}
+
+.row{
+    background-color: black;
+    padding: 1rem;
+    >h1{
+        font-weight: 300;
+         color: white;
+        margin: 0.2rem;
+
+    }
+    >div{
+        display: flex;
+        overflow-x: auto;
+        justify-content: center;
+      
+    }
+
+}
+
+.card{
+    width: 200px;
+    margin-left: 0.7rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover{
+        transform: translateX(-10px);
+    }
+}
+
+.genereBox{
+    overflow-x: auto;
+    display: flex;
+    height: 88px;
+    background-color:black;
+    
+    > a{
+        // text-align: center;
+        color: black;
+        border-radius: 0.3rem;
+        background-color: white;
+        // display: flex;
+        // justify-content: center;
+        padding: 1rem;
+        margin: 1rem;
+        text-decoration: none;
+    }
+}
