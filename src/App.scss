@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    a{
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+   
+}
+
+
+
+Nav{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+     > img{
+    height: 50%;
+    }
+    >div{
+
+        margin-left: 1rem;
+        width: 100%;
+        
+    
+        >a{
+            cursor: pointer;
+            color: white;
+            margin-left: 1.9rem;
+        }
+       
+    }
+
+    >svg{
+         margin-right: 2rem;
+         font-size: 1.8rem;
+         cursor: all-scroll;
+    }
+}
+
